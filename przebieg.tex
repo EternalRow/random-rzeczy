@@ -1,0 +1,115 @@
+\documentclass[12pt,twoside,a4]{mwbk}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% polonizacja 
+%% !! kodowanie cp1250
+%\usepackage[polish]{babel} 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+
+
+\usepackage{hhline}
+\usepackage{graphicx}
+
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% marginesy
+\usepackage[a4paper,top=2.5cm,foot=2cm,left=3.5cm,right=2.5cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% pakiety ,,matematyczne''  
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Twierdzenia, definicje, i inne
+\newtheorem{twierdzenie}{Twierdzenie}[chapter]
+\newtheorem{definicja}{Definicja}[chapter]
+\newtheorem{lemat}{Lemat}[chapter]
+\newtheorem{wniosek}{Wniosek}[chapter]
+\newtheorem{przyklad}{Przykład}[chapter]
+\newtheorem{uwaga}{Uwaga}[chapter]
+\newenvironment{dowod}[1][Dowód]{\noindent\textbf{#1.} }{\newline\smallskip \hfill \rule{0.5em}{0.5em}}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+
+
+\author{Łukasz}
+\title{przebieg funkcji}
+
+%% początek dokumentu
+\begin{document}
+\chapter{Przebieg funkcji $f(x) = 3x - \frac{x^2}{3}$}
+		\section{Definicja i wzór}
+			Dana jest funkcja kwadratowa $f(x)$ taka, że: \\
+		
+		\begin{equation}
+			f(x)=3x - \frac{x^2}{3}\text{, gdzie } x\in\mathbb{R}\text{ oraz } f(x)\in\mathbb{R}
+		\end{equation}
+		
+		\section{Pierwiastki funkcji}
+		Funcja 1.1 ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
+		\begin{equation}
+			f(x) = 0  \Leftrightarrow 3x - \frac{x^2}{3}=0\\
+		\end{equation}
+		\subsection{Obliczamy wartość wyróżnika kwadratowego(delty)}
+		Obliczamy wartość delty dla równania 1.2:
+		\begin{gather*}
+			\Delta = 3^2-4\cdot\frac{1}{3}\cdot0\\
+			\Delta = 9\\ 
+			\sqrt\Delta = 3
+		\end{gather*}
+		\subsection{Obliczanie pierwiastków równania}
+		\begin{center}
+			$\Delta$ jest większa od 0, więc to równanie ma dwa rozwiązania, które oznaczymy jako $x_1$ oraz $x_2$:
+		\end{center}
+		\begin{align*}
+			\qquad\qquad&x_1 = \frac{-3+3}{\frac{2}{3}}& &x_2 = \frac{-3-3}{\frac{2}{3}}&\\
+			\qquad\qquad&x_1 = 0& &x_2 = 9&
+		\end{align*}
+		
+		
+		\section{Monotoniczność funkcji}
+		\subsection{Szukanie pochodnej funkcji}
+		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
+		\begin{equation}
+			f'(x)=3 - \frac{2x}{3}
+		\end{equation}
+		\subsection{Badanie monotoniczności funkcji}
+		pochodna  1.3 jest funkcją prostą malejącą oraz ma miejsce zerowe w punkcie $A=(4.5,0)$. Oznacza to, że funkcja 1.1 jest rosnąca w przedziale $(-\infty,4,5)$, osiąga maximum w punkcie $(4.5,0)$ oraz maleje w przedziale $(4.5,\infty)$.
+
+
+		\section{Wykres funkcji}
+		Na podstawie obliczonych miejsc zerowych oraz monotoniczności funkcji możemy naszkicować jej wykres:\\
+		\begin{center}
+		\resizebox{0.8\textwidth}{!}{%
+		\begin{tikzpicture}
+			\clip (-5,-5) rectangle (11,10);
+			[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+			\draw[->,color=black] (-9.82600865800865,0.) -- (29.447134199134172,0.);
+			\foreach \x in {-8.,-6.,-4.,-2.,2.,4.,6.,8.,10.,12.,14.,16.,18.,20.,22.,24.,26.,28.}
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+			\draw[->,color=black] (0.,-11.1353593073593) -- (0.,12.050545454545448);
+			\foreach \y in {-10.,-8.,-6.,-4.,-2.,2.,4.,6.,8.,10.,12.}
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+			\clip(-9.82600865800865,-11.1353593073593) rectangle (29.447134199134172,12.050545454545448);
+			\draw[line width=1.2pt,color=qqwuqq,smooth,samples=100,domain=-9.82600865800865:29.447134199134172] plot(\x,{3.0*(\x)-(\x)^(2.0)/3.0});
+			\begin{scriptsize}
+				\draw[color=qqwuqq] (-2.5199134199134177,-10.835740259740252) node {$f$};
+			\end{scriptsize}
+		\end{tikzpicture}
+}%
+		\end{center}
+		
+		
+
+		
+		
+\end{document}

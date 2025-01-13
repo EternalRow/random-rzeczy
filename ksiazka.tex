@@ -11,6 +11,7 @@
 
 \usepackage{hhline}
 \usepackage{graphicx}
+\graphicspath{./}
 
 
 \usepackage{pgf,tikz}
@@ -41,11 +42,72 @@
 \definecolor{ffqqqq}{rgb}{1.,0.,0.}
 
 
-\author{Łukasz}
-\title{przebieg funkcji}
+
 
 %% początek dokumentu
 \begin{document}
+	\author{Łukasz Paśka}
+	\title{Oprogramowanie matematyczne - Projekt}
+	\maketitle
+\chapter{Politechnika Poznańska}
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{PPzdjecie}
+	\centering
+\end{figure} 
+
+\section{Historia PP}
+Początki wyższego szkolnictwa technicznego w Poznaniu sięgają roku 1919, kiedy to Naczelna Rada Ludowa powołała Państwową Wyższą Szkołę Budowy Maszyn. Regularne zajęcia z niewielką początkowo liczbą studentów rozpoczęły się 1 września tego roku. Niestety zanim doszło do pierwszego absolutorium obniżono status szkoły usuwając z jej nazwy przymiotnik „wyższa”. Natychmiast też rozpoczęły się starania o przywrócenie tej rangi.\\
+
+W roku 1921 w „Wiadomościach Technicznych” ukazał się „Memoriał w sprawie założenia politechniki w Poznaniu” zawierający uzasadnienie powołania takiej uczelni, propozycje realizacji planu dotyczące potrzebnego gruntu, gmachu, kosztów jego budowy, urządzeń i funkcjonowania uczelni. Jednak musiało minąć wiele lat, żeby marzenia o Politechnice w Poznaniu mogły się spełnić. Stało się to dopiero w roku 1955\\
+
+Działająca od roku 1919 Państwowa Wyższa Szkoła Budowy Maszyn (w roku 1922 nazwa Szkoły została zmieniona na Państwową Szkołe Budowy Maszyn). Dopiero jesienią 1929 roku nadano jej nowy statut i przemianowano na Państwową Wyższą Szkołę Budowy Maszyn i Elektrotechniki. W takim kształcie Szkoła działała do wybuchu II wojny światowej, a jej mury opuściło 716 absolwentów.\\
+
+W roku 1937 ministerstwo formalnie wyraziło zgodę na powstanie w Poznaniu politechniki, ale II Wojna Światowa faktycznie przekreśliła te plany. Po jej zakończeniu działalność Szkoły reaktywowano już w roku 1945 przekształcają ją w Szkołę Inżynierską. Równocześnie kontynuowano jednak starania o ustanowienie w Poznaniu pełnoprawnej akademickiej uczelni technicznej. W tym celu zawiązał się Komitet Organizacyjny Politechniki Poznańskiej, sformułowano odpowiedni memoriał i opracowano plan działania. Niestety, niedostatek samodzielnej kadry naukowo-dydaktycznej, stan pomieszczeń i brak zaplecza laboratoryjnego pozwoliły jedynie na powołanie Szkoły Inżynierskiej - wyższej szkoły zawodowej, uczelni nieakademickiej z wydziałami: Budowy Maszyn, Elektrycznym, Budownictwa. W takim kształcie działalność Szkoły prowadzono do połowy lat 50-tych XX wieku.
+
+\section{Lista Wydziałów PP}
+\begin{enumerate}
+	\item Wydział architektury
+		\begin{itemize}
+			\item Władze Wydziału
+			\begin{description}
+				\item[Dziekan] A. Gawlak dr hab. inż. arch. Agata GAWLAK, prof. PP
+				\item[Prodziekan ds. współpracy międzynarodowej i rozwoju] A. Nadolny dr hab. inż. arch. Adam Nadolny, prof. PP
+				\item[...] ... 
+			\end{description}
+			\item Kierunki
+			\begin{enumerate}
+				\item Architektura
+				\item Architektura Wnętrz
+			\end{enumerate}
+		\end{itemize}
+	\item Wydział automatyki, robotyki i elektrotechniki
+		\begin{itemize}
+			\item Władze Wydziału
+			\begin{description}
+				\item[Dziekan] Wojciech SZELĄG prof. dr hab. inż. Wojciech SZELĄG	
+				\item[Prodziekan ds. kształcenia na studiach stacjonarnych] dr hab. inż. Stefan BROCK, prof. PP
+				\item[...] ... 
+			\end{description}
+			\item Kierunki
+			\begin{enumerate}
+				\item Automatyka i robotyka
+				\item Elektromobilność
+				\item Elektrotechnika
+				\item Matematyka w technice
+				\item Matematyka nowoczesnych technologii
+			\end{enumerate}
+		\end{itemize}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
 \chapter{Przebieg funkcji składanej}
 		\section{Definicja i wzór}
 			Dana jest funkcja składana $f(x)$ taka, że: \\
@@ -56,44 +118,159 @@
 			\begin{aligned}
 				&3x+8& &\text{ dla } -5 \le x \le -3; \\
 				&\frac{2x^2+3x-5}{x^2+1}& &\text{ dla } -3 < x \le 3;\\
-				&-\frac{x^2}{3}+4& &\text{ dla } x\ge 0.
+				&-\frac{x^2}{3}+4& &\text{ dla } 3 < x\le 5.
 			\end{aligned}
 			\right.
 			\text{, gdzie } x\in\mathbb{R}\text{ oraz } f(x)\in\mathbb{R}.
 		\end{equation}
-		
-		
-		\section{Pierwiastki funkcji}
-		Szukamy miejsc zerowych funkcji (1.1) w trzech przedziałach:
-		\subsection{Pierwiastki funkcji dla przedziału <-5, 3>}
+		\section{analiza przedziału <-5;-3>}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla prostej w przedziale <-5;-3>:
 		\begin{equation}
-			f(x) = 0  \Leftrightarrow 3x - \frac{x^2}{3}=0.\\
+			g(x)=3x+8
 		\end{equation}
-		\subsection{Obliczamy wartość wyróżnika kwadratowego(delty)}
-		Obliczamy wartość delty dla równania (1.2):
+		\subsection{szukanie dziedziny i przeciwdziedziny}
+		Z własności funkci prostej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji 2.2, jest przedział <-5;-3>, a przeciwdziedziną przedział <g(-5);g(-3)>, czyli zgodnie z 2.3 i 2.4, przedział <-7;-1>
+		\begin{equation}
+			g(-5)=3\cdot(-5)+8=-7
+		\end{equation}
+		\begin{equation}
+			g(-3)=3*(-3)+8=-1
+		\end{equation}
+		\subsection{wyznaczanie monotoniczności}
+		Jako że wyznacznik kierunkowy funkcji jest większy od zera, wiemy z właności prostej, że funkcja jest rosnąca.
+		\subsection{szukanie pierwiastków funkcji}
+		Funkcja 2.2, ma miejsca zerowe, wtedy i tylko wtedy, gdy istnieje taki x, że:
+		\begin{equation*}
+			0=3x+8
+		\end{equation*}
+		\begin{equation}
+			x=-\frac{8}{3}
+		\end{equation}
+		wynik 2.5, nie należy do przedziału, więc prosta nie ma miejsc zerowych w oidanym zakresie
+		\subsection{określenie granic na krańcach przedziału}
+		Przedział <-5;-3>, jest obustronnie domknięty, więc jego granice na krańcach przedziału są takie same jak wartości w tych punktach: dla granicy lewostronnej wynik 2.3, a dla prawostronnej 2.4
+		\section{analiza przedziału (-3;3>}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla funkcji wymiernej w przedziale (3;3>:
+		\begin{equation}
+			k(x) = \frac{2x^2+3x-5}{x^2+1}
+		\end{equation}
+		\subsection{Określenie dziedziny}
+		Dziedziną funkcji wymiernej 2.6 jest zbiór wszystkich liczb rzeczywistych, dla których:
+		\begin{align*}
+			x^2+1&\neq0\\
+			x^2&\neq-1\\
+			x\neq\sqrt{-1} &\lor x\neq-\sqrt{-1}
+		\end{align*}
+		Zarówno $\sqrt{-1}$, jak i $-\sqrt{-1}$ nie należą do dziedziny liczb rzeczywistych, więc funkcja ta jest ciągła w przedziale (-3;3>
+		\subsection{Wyznaczenie monotoniczności i ekstremów}
+		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
+		\begin{align}
+			k'(x)&=\frac{(4x+3)\cdot(x^2+1)-(2x^2+3x-5)(2x)}{(x^2+1)^2}\notag\\
+			k'(x)&=\frac{(4x^3+3x^2+4x+3)-(4x^3+6x^2-10x)}{(x^2+1)^2}\notag\\
+			k'(x)&=\frac{(4x^3+3x^2+4x+3)-(4x^3+6x^2-10x)}{(x^2+1)^2}\notag\\
+			k'(x)&=\frac{-3x^2+14x+3}{(x^2+1)^2}
+		\end{align}
+		Następnie szukamy miejsc zerowych pochodnej 2.7:
+		\begin{equation}
+			k'(x)=0\iff-3x^2+14x+3=0\land(x^2+1)^2\neq0			
+		\end{equation}
+		W sekcji 2.3.1 dowiedliśmy, że $x^2+1$ nie należdy do dziedziny, więc do rozpatrzenia zostaje obliczyć miejsca zerowe pochodnej.
+		Obliczamy wartość wyróżnika kwadratowego dla powyższego równania 2.8:
+		\begin{align*}
+			-3x^2+14x+3=0\\
+			\Delta=196+36=232\\
+			\sqrt{\Delta}=\sqrt{232}=2\sqrt{58}\\
+		\end{align*}
+		$\Delta$ jest większa od 0, więc to równanie ma dwa rozwiązania, które oznaczymy jako $x_1$ oraz $x_2$:
+		\begin{align}
+			\qquad\qquad&x_1 = \frac{-14+2\sqrt{58}}{-6}& &x_2 = \frac{-14-2\sqrt{58}}{-6}&\notag\\
+			\qquad\qquad&x_1 = \frac{7-\sqrt{58}}{3}& &x_2 = \frac{7+\sqrt{58}}{3}&\\
+			\qquad\qquad&x_1\in(-3;3>& &x_2\not\in(-3;3>&
+		\end{align}
+		Funkcja 2.8 jest funkcją kwadratową o współczynniku ujemnym przy najwyższej potędze. Oznacza, to że ramiona paraboli są skierowane ku dole. Wynika z tego, że jest ujemna w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, przecina oś odciętych w punkcie $\frac{7-\sqrt{58}}{3}$ oraz jest dodatnia w przedziale $(\frac{7-\sqrt{58}}{3};3>$. Oznacza, to że funkcja 2.6 jest malejąca w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, osiąga wartość minimalną w punkcie $\frac{7-\sqrt{58}}{3}$ i jest rosnąca w przedziale $(\frac{7-\sqrt{58}}{3};3>$
+		\subsection{Określenie przeciwdziedziny}
+		\subsection{szukanie pierwiastków funkcji}
+			Funcja 2.6 ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
+			\begin{equation}
+				k(x)=0\iff 2x^2+3x-5=0\land(x^2+1)\neq0	
+			\end{equation}
+			Z sekcji 2.3.1, wiemy że warunek $(x^2+1)\neq0$ jest prawdziwe dla każdej liczby rzeczywistej. Przechodzimy, więc do drugiego warunku. Obliczamy wartość wyróżnika kwadratowego dla pierwszego warunku 2.11:
+			
+			\begin{gather*}
+				\Delta = 9+4\cdot2\cdot5\\
+				\Delta = 49\\ 
+				\sqrt\Delta = 7
+			\end{gather*}
+			\begin{center}
+				$\Delta$ jest większa od 0, więc to równanie ma dwa rozwiązania, które oznaczymy jako $x_1$ oraz $x_2$:
+			\end{center}
+			\begin{align*}
+				\qquad\qquad&x_1 = \frac{-3-7}{4}& &x_2 = \frac{-3+7}{4}&\\
+				\qquad\qquad&x_1 = -2,5& &x_2 = 1&
+			\end{align*}
+			Oba wyniki należą do przedziału dziedziny.
+		\subsection{określenie granic na końcach przedziałów}
+		Obliczamy granicę funkcji ma krańcach przedziału.
+		\begin{equation}
+			\lim_{x\to-3^-} k(x) = \lim_{x\to-3^+} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot(-3)-5}{9+1} = 0,4
+		\end{equation}
+		\begin{equation}
+			\lim_{x\to3^-} h(x) = \lim_{x\to3^-} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot3-5}{9+1} = 2,2
+		\end{equation}
+		\section{analiza przedziału (3;5>}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla funkcji kwadratowej w przedziale (3;5>:
+		\begin{equation}
+			h(x)=-\frac{x^2}{3}+4
+		\end{equation}
+		\subsection{Określenie dziedziny}
+		Z własności funkci kwadratowej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji 2.6, jest przedział (3;5>.
+		\subsection{Badanie monotoniczności i ekstremów}
+		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
+		\begin{equation}
+			h'(x)=-\frac{2x}{3}
+		\end{equation}
+		pochodna  2.3 jest funkcją prostą malejącą oraz ma miejsce zerowe w punkcie $A=(0,0)$. Oznacza to, że funkcja 1.1 jest rosnąca w przedziale $(-\infty,0)$, osiąga maximum w punkcie $(0,0)$ oraz maleje w przedziale $(0,\infty)$. Co oznacza, że w podanym przedziale jest malejąca.
+		\subsection{Określenie przeciwdziedziny}
+		Na podstawie wniosków z podsekcji 2.4.1 oraz 2.4.2 możemy określić, że przeciwdziedzina jest równa przedziałowi (g(3);g(5)>, czyli zgodnie z przedział
+		\begin{equation}
+			h(3)=-\frac{3^2}{3}+4=1
+		\end{equation}
+		\begin{equation}
+			h(5)=-\frac{5^2}{3}+4=-\frac{13}{3}
+		\end{equation}
+		\subsection{szukanie pierwiastków funkcji}
+		Funcja 1.1 ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
+		\begin{equation}
+			h(x) = 0  \Leftrightarrow -\frac{x^2}{3}=0
+		\end{equation}
+		Obliczamy wartość wyróżnika kwadratowego dla równania 1.2:
 		\begin{gather*}
-			\Delta = 3^2-4\cdot\frac{1}{3}\cdot0,\\
-			\Delta = 9,\\ 
-			\sqrt\Delta = 3.
+			\Delta = 0+4\cdot\frac{1}{3}\cdot4\\
+			\Delta = \frac{16}{3}\\ 
+			\sqrt\Delta = \frac{4\sqrt{3}}{3}
 		\end{gather*}
-		
 		\begin{center}
 			$\Delta$ jest większa od 0, więc to równanie ma dwa rozwiązania, które oznaczymy jako $x_1$ oraz $x_2$:
 		\end{center}
 		\begin{align*}
-			\qquad\qquad&x_1 = \frac{-3+3}{\frac{2}{3}},& &x_2 = \frac{-3-3}{\frac{2}{3}},&\\
-			\qquad\qquad&x_1 = 0.& &x_2 = 9.&
+			\qquad\qquad&x_1 = \frac{\frac{4\sqrt{3}}{3}}{-\frac{2}{3}}& &x_2 = \frac{\frac{4\sqrt{3}}{3}}{\frac{2}{3}}&\\
+			\qquad\qquad&x_1 = -2\sqrt{3}& &x_2 = 2\sqrt{3}&
 		\end{align*}
-		
-		
-		\section{Monotoniczność funkcji}
-		\subsection{Szukanie pochodnej funkcji}
-		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
+		$x_1$ nie należy do przedziału, natomiast $x_2$ należy do przedziału, więc jest pierwiastkiem funkcji składanej 2.1
+		\subsection{określenie granic na końcach przedziałów}
+		Obliczamy granicę funkcji ma krańcach przedziału.
 		\begin{equation}
-			f'(x)=3 - \frac{2x}{3}.
+			\lim_{x\to3^+} h(x) = \lim_{x\to3^+} -\frac{x^2}{3}+4 = -\frac{3\cdot3}{3}+4 = 1
 		\end{equation}
-		\subsection{Badanie monotoniczności funkcji}
-		pochodna  (1.3) jest funkcją prostą malejącą oraz ma miejsce zerowe w punkcie $A=(4.5,0)$. Oznacza to, że funkcja (1.1) jest rosnąca w przedziale $(-\infty,4,5)$, osiąga maximum w punkcie $(4.5,0)$ oraz maleje w przedziale $(4.5,\infty)$.
+		\begin{equation}
+			\lim_{x\to5^-} h(x) = \lim_{x\to5^-} -\frac{x^2}{3}+4 = -\frac{5\cdot5}{3}+4 = -4\frac{1}{3}
+		\end{equation}
+		\section{Dziedzina i przeciwdziedzina}
+		\section{Pierwiastki funkcji}
+		\section{Monotoniczność}
+		\section{Ekstrema}
+		\section{Ciągłość}
+		
 
 
 		\section{Wykres funkcji}

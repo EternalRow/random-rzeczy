@@ -50,10 +50,10 @@
 	\title{Oprogramowanie matematyczne - Projekt}
 	\maketitle
 \chapter{Politechnika Poznańska}
-\begin{figure}[h]
-	\includegraphics[width=\linewidth]{PPzdjecie}
-	\centering
-\end{figure} 
+%\begin{figure}[h]
+%	\includegraphics[width=\linewidth]{PPzdjecie}
+%	\centering
+%\end{figure} 
 
 \section{Historia PP}
 Początki wyższego szkolnictwa technicznego w Poznaniu sięgają roku 1919, kiedy to Naczelna Rada Ludowa powołała Państwową Wyższą Szkołę Budowy Maszyn. Regularne zajęcia z niewielką początkowo liczbą studentów rozpoczęły się 1 września tego roku. Niestety zanim doszło do pierwszego absolutorium obniżono status szkoły usuwając z jej nazwy przymiotnik „wyższa”. Natychmiast też rozpoczęły się starania o przywrócenie tej rangi.\\
@@ -123,45 +123,46 @@ W roku 1937 ministerstwo formalnie wyraziło zgodę na powstanie w Poznaniu poli
 			\right.
 			\text{, gdzie } x\in\mathbb{R}\text{ oraz } f(x)\in\mathbb{R}.
 		\end{equation}
-		\section{analiza przedziału <-5;-3>}
-		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla prostej w przedziale <-5;-3>:
+		\section{analiza przedziału $<-5;-3>$}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji (2.1), dla prostej w przedziale $<-5;-3>$:
 		\begin{equation}
 			g(x)=3x+8
 		\end{equation}
 		\subsection{szukanie dziedziny i przeciwdziedziny}
-		Z własności funkci prostej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji 2.2, jest przedział <-5;-3>, a przeciwdziedziną przedział <g(-5);g(-3)>, czyli zgodnie z 2.3 i 2.4, przedział <-7;-1>
+		Z własności funkci prostej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji (2.2), jest przedział $<-5;-3>$, a przeciwdziedziną przedział $<g(-5);g(-3)>$,
 		\begin{equation}
 			g(-5)=3\cdot(-5)+8=-7
 		\end{equation}
 		\begin{equation}
 			g(-3)=3*(-3)+8=-1
 		\end{equation}
+		czyli zgodnie z (2.3) i (2.4), przedział $<-7;-1>$
 		\subsection{wyznaczanie monotoniczności}
 		Jako że wyznacznik kierunkowy funkcji jest większy od zera, wiemy z właności prostej, że funkcja jest rosnąca.
 		\subsection{szukanie pierwiastków funkcji}
-		Funkcja 2.2, ma miejsca zerowe, wtedy i tylko wtedy, gdy istnieje taki x, że:
+		Funkcja (2.2), ma miejsca zerowe, wtedy i tylko wtedy, gdy istnieje taki $x$, że:
 		\begin{equation*}
 			0=3x+8
 		\end{equation*}
 		\begin{equation}
 			x=-\frac{8}{3}
 		\end{equation}
-		wynik 2.5, nie należy do przedziału, więc prosta nie ma miejsc zerowych w oidanym zakresie
+		wynik (2.5), nie należy do przedziału, więc prosta nie ma miejsc zerowych w podanym zakresie
 		\subsection{określenie granic na krańcach przedziału}
-		Przedział <-5;-3>, jest obustronnie domknięty, więc jego granice na krańcach przedziału są takie same jak wartości w tych punktach: dla granicy lewostronnej wynik 2.3, a dla prawostronnej 2.4
-		\section{analiza przedziału (-3;3>}
-		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla funkcji wymiernej w przedziale (3;3>:
+		Przedział $<-5;-3>$, jest obustronnie domknięty, więc jego granice na krańcach przedziału są takie same jak wartości w tych punktach: dla granicy lewostronnej wynik (2.3), a dla prawostronnej (2.4)
+		\section{analiza przedziału $(-3;3>$}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji (2.1), dla funkcji wymiernej w przedziale $(3;3>$:
 		\begin{equation}
 			k(x) = \frac{2x^2+3x-5}{x^2+1}
 		\end{equation}
 		\subsection{Określenie dziedziny}
-		Dziedziną funkcji wymiernej 2.6 jest zbiór wszystkich liczb rzeczywistych, dla których:
+		Dziedziną funkcji wymiernej (2.6) jest zbiór wszystkich liczb rzeczywistych, dla których:
 		\begin{align*}
 			x^2+1&\neq0\\
 			x^2&\neq-1\\
 			x\neq\sqrt{-1} &\lor x\neq-\sqrt{-1}
 		\end{align*}
-		Zarówno $\sqrt{-1}$, jak i $-\sqrt{-1}$ nie należą do dziedziny liczb rzeczywistych, więc funkcja ta jest ciągła w przedziale (-3;3>
+		Zarówno $\sqrt{-1}$, jak i $-\sqrt{-1}$ nie należą do dziedziny liczb rzeczywistych, więc funkcja ta jest ciągła w przedziale $(-3;3>$
 		\subsection{Wyznaczenie monotoniczności i ekstremów}
 		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
 		\begin{align}
@@ -170,31 +171,29 @@ W roku 1937 ministerstwo formalnie wyraziło zgodę na powstanie w Poznaniu poli
 			k'(x)&=\frac{(4x^3+3x^2+4x+3)-(4x^3+6x^2-10x)}{(x^2+1)^2}\notag\\
 			k'(x)&=\frac{-3x^2+14x+3}{(x^2+1)^2}
 		\end{align}
-		Następnie szukamy miejsc zerowych pochodnej 2.7:
+		Następnie szukamy miejsc zerowych pochodnej (2.7):
 		\begin{equation}
 			k'(x)=0\iff-3x^2+14x+3=0\land(x^2+1)^2\neq0			
 		\end{equation}
-		W sekcji 2.3.1 dowiedliśmy, że $x^2+1$ nie należdy do dziedziny, więc do rozpatrzenia zostaje obliczyć miejsca zerowe pochodnej.
-		Obliczamy wartość wyróżnika kwadratowego dla powyższego równania 2.8:
+		W sekcji 2.3.1 dowiedliśmy, że $x^2+1=0$ nie należdy do dziedziny, więc do rozpatrzenia zostaje obliczyć miejsca zerowe pochodnej (2.7).
+		Obliczamy wartość wyróżnika kwadratowego dla równania $-3x^2+14x+3=0$:
 		\begin{align*}
-			-3x^2+14x+3=0\\
 			\Delta=196+36=232\\
 			\sqrt{\Delta}=\sqrt{232}=2\sqrt{58}\\
 		\end{align*}
 		$\Delta$ jest większa od 0, więc to równanie ma dwa rozwiązania, które oznaczymy jako $x_1$ oraz $x_2$:
-		\begin{align}
-			\qquad\qquad&x_1 = \frac{-14+2\sqrt{58}}{-6}& &x_2 = \frac{-14-2\sqrt{58}}{-6}&\notag\\
+		\begin{align*}
+			\qquad\qquad&x_1 = \frac{-14+2\sqrt{58}}{-6}& &x_2 = \frac{-14-2\sqrt{58}}{-6}&\\
 			\qquad\qquad&x_1 = \frac{7-\sqrt{58}}{3}& &x_2 = \frac{7+\sqrt{58}}{3}&\\
 			\qquad\qquad&x_1\in(-3;3>& &x_2\not\in(-3;3>&
-		\end{align}
-		Funkcja 2.8 jest funkcją kwadratową o współczynniku ujemnym przy najwyższej potędze. Oznacza, to że ramiona paraboli są skierowane ku dole. Wynika z tego, że jest ujemna w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, przecina oś odciętych w punkcie $\frac{7-\sqrt{58}}{3}$ oraz jest dodatnia w przedziale $(\frac{7-\sqrt{58}}{3};3>$. Oznacza, to że funkcja 2.6 jest malejąca w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, osiąga wartość minimalną w punkcie $\frac{7-\sqrt{58}}{3}$ i jest rosnąca w przedziale $(\frac{7-\sqrt{58}}{3};3>$
-		\subsection{Określenie przeciwdziedziny}
+		\end{align*}
+		Pochodna (2.8) jest funkcją kwadratową o współczynniku ujemnym przy najwyższej potędze. Oznacza, to że parabola obustronnie dąży do $-\infty$. Wynika z tego, że jest ujemna w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, przecina oś odciętych w punkcie $\frac{7-\sqrt{58}}{3}$ oraz jest dodatnia w przedziale $(\frac{7-\sqrt{58}}{3};3>$. Oznacza, to że funkcja (2.6) jest malejąca w przedziale $(-3;\frac{7-\sqrt{58}}{3})$, osiąga wartość minimalną w punkcie $\frac{7-\sqrt{58}}{3}$ i jest rosnąca w przedziale $(\frac{7-\sqrt{58}}{3};3>$
 		\subsection{szukanie pierwiastków funkcji}
-			Funcja 2.6 ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
+			Funcja (2.6) ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
 			\begin{equation}
 				k(x)=0\iff 2x^2+3x-5=0\land(x^2+1)\neq0	
 			\end{equation}
-			Z sekcji 2.3.1, wiemy że warunek $(x^2+1)\neq0$ jest prawdziwe dla każdej liczby rzeczywistej. Przechodzimy, więc do drugiego warunku. Obliczamy wartość wyróżnika kwadratowego dla pierwszego warunku 2.11:
+			Z sekcji 2.3.1, wiemy że warunek $(x^2+1)\neq0$ jest prawdziwe dla każdej liczby rzeczywistej. Przechodzimy, więc do drugiego warunku. Obliczamy wartość wyróżnika kwadratowego dla pierwszego równania $2x^2+3x-5=0$:
 			
 			\begin{gather*}
 				\Delta = 9+4\cdot2\cdot5\\
@@ -211,39 +210,39 @@ W roku 1937 ministerstwo formalnie wyraziło zgodę na powstanie w Poznaniu poli
 			Oba wyniki należą do przedziału dziedziny.
 		\subsection{określenie granic na końcach przedziałów}
 		Obliczamy granicę funkcji ma krańcach przedziału.
-		\begin{equation}
-			\lim_{x\to-3^-} k(x) = \lim_{x\to-3^+} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot(-3)-5}{9+1} = 0,4
-		\end{equation}
-		\begin{equation}
-			\lim_{x\to3^-} h(x) = \lim_{x\to3^-} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot3-5}{9+1} = 2,2
-		\end{equation}
-		\section{analiza przedziału (3;5>}
-		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji 2.1, dla funkcji kwadratowej w przedziale (3;5>:
+		\begin{equation*}
+			\lim_{x\to-3^+} k(x) = \lim_{x\to-3^+} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot(-3)-5}{9+1} = 0,4
+		\end{equation*}
+		\begin{equation*}
+			\lim_{x\to3^-} k(x) = \lim_{x\to3^-} \frac{2x^2+3x-5}{x^2+1} = \frac{2\cdot9+3\cdot3-5}{9+1} = 2,2
+		\end{equation*}
+		\subsection{Określenie przeciwdziedziny}
+		Na podstawie analizy monotoniczności, określania dziedziny oraz szukania granic funkcji (2.6), wiemy że przeciwdziedziną tej dziedziny jest zakres od minimum lokalnego do krańca jej przedziału:$\left<k\left(\frac{7-\sqrt{58}}{3}\right);2,2\right) $, czyli $\left<\frac{277-37\sqrt{58}}{116-14\sqrt{58}};2,2\right)$
+		\section{analiza przedziału $(3;5>$}
+		Wyznaczmy własności, które użyjemy do wyznaczenia własności funkcji (2.1), dla funkcji kwadratowej w przedziale $(3;5>$:
 		\begin{equation}
 			h(x)=-\frac{x^2}{3}+4
 		\end{equation}
 		\subsection{Określenie dziedziny}
-		Z własności funkci kwadratowej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji 2.6, jest przedział (3;5>.
+		Z własności funkci kwadratowej oraz założeń, możemy określić, że funkcja jest ciągła, co pozwala nam stwierdzić, że dziedziną funkcji (2.10), jest przedział $(3;5>$.
 		\subsection{Badanie monotoniczności i ekstremów}
 		W celu zbadania monotoniczności funkcji szukamy jej pochodnej:
 		\begin{equation}
 			h'(x)=-\frac{2x}{3}
 		\end{equation}
-		pochodna  2.3 jest funkcją prostą malejącą oraz ma miejsce zerowe w punkcie $A=(0,0)$. Oznacza to, że funkcja 1.1 jest rosnąca w przedziale $(-\infty,0)$, osiąga maximum w punkcie $(0,0)$ oraz maleje w przedziale $(0,\infty)$. Co oznacza, że w podanym przedziale jest malejąca.
+		pochodna  (2.11) jest funkcją prostą malejącą oraz ma miejsce zerowe w punkcie $A=(0,0)$. Oznacza to, że funkcja (2.10) jest rosnąca w przedziale $(-\infty,0)$, osiąga maximum w punkcie $(0,0)$ oraz maleje w przedziale $(0,\infty)$. Co oznacza, że w podanym przedziale jest malejąca.
 		\subsection{Określenie przeciwdziedziny}
-		Na podstawie wniosków z podsekcji 2.4.1 oraz 2.4.2 możemy określić, że przeciwdziedzina jest równa przedziałowi (g(3);g(5)>, czyli zgodnie z przedział
-		\begin{equation}
-			h(3)=-\frac{3^2}{3}+4=1
-		\end{equation}
-		\begin{equation}
+		Na podstawie wniosków z podsekcji 2.4.1 oraz 2.4.2 możemy określić, że przeciwdziedzina jest równa przedziałowi $(g(3);g(5)>$, czyli
+		\begin{align*}
+			h(3)=-\frac{3^2}{3}+4=1\\
 			h(5)=-\frac{5^2}{3}+4=-\frac{13}{3}
-		\end{equation}
+		\end{align*}
 		\subsection{szukanie pierwiastków funkcji}
-		Funcja 1.1 ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
+		Funcja (2.10) ma miejsca zerowe, jeżeli jest spełnieniona poniższa zależność:
 		\begin{equation}
 			h(x) = 0  \Leftrightarrow -\frac{x^2}{3}=0
 		\end{equation}
-		Obliczamy wartość wyróżnika kwadratowego dla równania 1.2:
+		Obliczamy wartość wyróżnika kwadratowego dla równania (2.12):
 		\begin{gather*}
 			\Delta = 0+4\cdot\frac{1}{3}\cdot4\\
 			\Delta = \frac{16}{3}\\ 
@@ -256,7 +255,7 @@ W roku 1937 ministerstwo formalnie wyraziło zgodę na powstanie w Poznaniu poli
 			\qquad\qquad&x_1 = \frac{\frac{4\sqrt{3}}{3}}{-\frac{2}{3}}& &x_2 = \frac{\frac{4\sqrt{3}}{3}}{\frac{2}{3}}&\\
 			\qquad\qquad&x_1 = -2\sqrt{3}& &x_2 = 2\sqrt{3}&
 		\end{align*}
-		$x_1$ nie należy do przedziału, natomiast $x_2$ należy do przedziału, więc jest pierwiastkiem funkcji składanej 2.1
+		$x_1$ nie należy do przedziału, natomiast $x_2$ należy do przedziału, więc jest pierwiastkiem funkcji 2.10
 		\subsection{określenie granic na końcach przedziałów}
 		Obliczamy granicę funkcji ma krańcach przedziału.
 		\begin{equation}
